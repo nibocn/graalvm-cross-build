@@ -18,7 +18,7 @@ jobs:
           native-image-job-reports: 'true'
 
       - name: Build
-        run: gradlew nativeCompile
+        run: ./gradlew nativeCompile
 
       - name: Upload binary
         uses: actions/upload-artifact@v2
